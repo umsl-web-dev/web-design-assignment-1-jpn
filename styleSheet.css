@@ -1,8 +1,120 @@
-nav{
-    color: black;
-  
-    font-family: 'Times New Roman';
-    font-size: 15px;
+a:hover {
+	background-color: black;
+	font-style: normal;
 }
 
+a {
+	color: white;
+	font-style: normal;
+	font-family: 'Times New Roman';
+}
 
+.indexBody {
+	background-color: rgb(138, 10, 10);
+	font-size: 20px;
+}
+
+.tableIMG {
+	width: 200px;
+	height: 300px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: red;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+/* The container <div> */
+.dropdown {
+	position: relative;
+	float: right;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+th {
+	font-size: 24px;
+	color: black;
+}
+.IndexTable {
+	padding-top: 100px;
+	padding-left: 100px;
+}
+
+th:hover {
+	color: blue;
+	background-color: white;
+	font-style: italic;
+}
+
+td:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.ListSection {
+	position: absolute;
+	left: 750px;
+	top: 300px;
+}
+
+ul,
+ol,
+li {
+	color: white;
+}
+
+ul {
+	font-size: 32px;
+}
+
+li {
+	font-size: 24px;
+}
