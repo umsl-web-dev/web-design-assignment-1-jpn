@@ -1,0 +1,38 @@
+nav {
+	background-color: black;
+	font-family: 'Times New Roman';
+	font-size: 24px;
+	height: 12%;
+	width: 100%;
+}
+
+.NavA {
+	color: red;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+.indexBody {
+	background-color: rgb(185, 6, 6);
+}
+
+.marvelImg {
+	padding-left: 550px;
+}
+
+.indexh1 {
+	padding-top: 20px;
+	padding-left: 500px;
+	color: black;
+}
+
+table,
+th,
+td,
+tr {
+	border-width: 1px;
+	border-collapse: collapse;
+	border-style: dashed;
+	border-color: black;
+	font-size: 20px;
+}
