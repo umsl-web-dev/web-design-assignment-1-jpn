@@ -125,7 +125,6 @@ li {
 .Backgroundbody{
 	background-color: rgb(138, 10, 10);
 	color: black;
-
 }
 
 .background_pics {
@@ -135,4 +134,14 @@ li {
 .background_section{
 	color: black;
 	left: 175px;
+}
+
+
+	th{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th,td{
+		 padding: 5px;
+		 text-align: left;
 }
