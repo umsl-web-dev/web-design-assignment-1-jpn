@@ -9,6 +9,10 @@ a {
 	font-family: 'Times New Roman';
 }
 
+.indexH1 {
+	color: white;
+}
+
 .indexBody {
 	background-color: rgb(138, 10, 10);
 	font-size: 20px;
@@ -64,12 +68,12 @@ a {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-	background-color: red;
+	background-color: darkred;
 }
 
 .column {
 	float: left;
-	width: 50%;
+	width: 20%;
 }
 
 .row:after {
@@ -79,12 +83,8 @@ a {
 }
 
 th {
-	font-size: 24px;
-	color: black;
-}
-.IndexTable {
-	padding-top: 100px;
-	padding-left: 100px;
+	font-size: 32px;
+	color: White;
 }
 
 th:hover {
@@ -99,12 +99,6 @@ td:hover {
 	border-width: 3px;
 }
 
-.ListSection {
-	position: absolute;
-	left: 750px;
-	top: 300px;
-}
-
 ul,
 ol,
 li {
@@ -117,4 +111,47 @@ ul {
 
 li {
 	font-size: 24px;
+}
+
+footer {
+	color: white;
+	font-size: 20px;
+	font-family: cursive;
+	width: 100%;
+	text-align: center;
+	padding-top: 700px;
+}
+
+.divInput {
+	width: 525px;
+	float: left;
+	padding-left: 100px;
+	padding-top: 30px;
+	color: white;
+	font-size: 22px;
+}
+
+.midPage {
+	width: 100%;
+	margin: auto;
+	padding-top: 25px;
+}
+
+.ListSection {
+	float: left;
+	padding-right: 15px;
+	padding-left: 75px;
+	padding-top: 25px;
+}
+
+.IndexTable {
+	float: left;
+	padding-left: 225px;
+}
+
+input:hover {
+	border-color: white;
+	border-width: 4px;
+	background-color: black;
+	color: white;
 }
