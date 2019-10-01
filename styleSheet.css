@@ -122,10 +122,17 @@ li {
 
 /* This is CSS for parts of the Background Page on Stan */
 
+.Backgroundbody{
+	background-color: rgb(138, 10, 10);
+	color: black;
+
+}
+
 .background_pics {
 	left: 375px;
 }
+
 .background_section{
-	color: blue;
+	color: black;
 	left: 175px;
 }
