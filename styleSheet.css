@@ -113,6 +113,17 @@ li {
 	font-size: 24px;
 }
 
+.Backgroundbody{
+	background-color: rgb(138, 10, 10);
+	color: black;
+}
+.background_pics {
+	left: 375px;
+}
+.background_section{
+	color: black;
+	left: 175px;
+}
 footer {
 	color: white;
 	font-size: 20px;
@@ -121,7 +132,6 @@ footer {
 	text-align: center;
 	padding-top: 700px;
 }
-
 .divInput {
 	width: 525px;
 	float: left;
@@ -131,10 +141,11 @@ footer {
 	font-size: 22px;
 }
 
+
 .midPage {
 	width: 100%;
-	margin: auto;
 	padding-top: 25px;
+	margin: auto;
 }
 
 .ListSection {
@@ -155,3 +166,4 @@ input:hover {
 	background-color: black;
 	color: white;
 }
+
