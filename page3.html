@@ -1,11 +1,199 @@
 <html>
-  <head>
-    <title></title>
+      <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+          h1 {
+            text-shadow: 2px 2px 5px white;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            background-color: #696969;
+            font-family: Helvetica, sans-serif;
+          }
+          
+          /* The actual timeline (the vertical ruler) */
+          .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          
+          /* The actual timeline (the vertical ruler) */
+          .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+          }
+          
+          /* Container around content */
+          .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+          }
+          
+          /* The circles on the timeline */
+          .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: black;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+          }
+          
+          /* Place the container to the left */
+          .left {
+            left: 0;
+          }
+          
+          /* Place the container to the right */
+          .right {
+            left: 50%;
+          }
+          
+          /* Add arrows to the left container (pointing right) */
+          .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid black;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent black;
+          }
+          
+          /* Add arrows to the right container (pointing left) */
+          .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid black;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent black transparent transparent;
+          }
+          
+          /* Fix the circle for containers on the right side */
+          .right::after {
+            left: -16px;
+          }
+          
+          /* The actual content */
+          .content {
+            padding: 20px 30px;
+            background-color: black;
+            position: relative;
+            border-radius: 6px;
+          }
+          
+          /* Media queries - Responsive timeline on screens less than 600px wide */
+          @media screen and (max-width: 600px) {
+            /* Place the timelime to the left */
+            .timeline::after {
+            left: 31px;
+            }
+            
+            /* Full-width containers */
+            .container {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+            }
+            
+            /* Make sure that all arrows are pointing leftwards */
+            .container::before {
+            left: 60px;
+            border: medium solid black;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent black transparent transparent;
+            }
+          
+            /* Make sure all circles are at the same spot */
+            .left::after, .right::after {
+            left: 15px;
+            }
+            
+            /* Make all right containers behave like the left ones */
+            .right {
+            left: 0%;
+            }
+          }
+          </style>
+    <title>Timeline</title>
+    <center>
+      <h1>
+        <font color="white">A Marvel Studios</font>
+        <i>
+          <font color=blue>In</font><font color=red>fi</font><font color=yellow>ni</font><font color=purple>ty </font><font color=orange>Sa</font><font color=green>ga</font>
+        </i>
+        <font color="white">Timeline</font>
+      </h1>
+    </center>
   </head>
   <body>
+      <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2><font color=white>Phase 1</font></h2>
+            <img src=ironman.jfif style="height: 150px; width: 100px"></img>
+            <img src=hulk.jfif style="height: 150px; width: 100px"></img>
+            <img src=ironman2.jfif style="height: 150px; width: 100px"></img>
+            <img src=thor.jfif style="height: 150px; width: 100px"></img>
+            <img src=captainamerica.jfif style="height: 150px; width: 100px"></img>
+            <img src=avengers.jfif style="height: 150px; width: 100px"></img>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2><font color=white>Phase 2</font></h2>
+              <img src=ironman3.jfif style="height: 150px; width: 100px"></img>
+              <img src=thordarkworld.jfif style="height: 150px; width: 100px"></img>
+              <img src=captainamericawintersoldier.jfif style="height: 150px; width: 100px"></img>
+              <img src=guardiansofthegalaxy.jfif style="height: 150px; width: 100px"></img>
+              <img src=avengersageofultron.jfif style="height: 150px; width: 100px"></img>
+              <img src=antman.jfif style="height: 150px; width: 100px"></img>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2><font color=white>Phase 3</font></h2>
+              <img src=captainamericacivilwar.jfif style="height: 150px; width: 100px"></img>
+              <img src=doctorstrange.jfif style="height: 150px; width: 100px"></img>
+              <img src=guardiansofthegalaxyvol2.jfif style="height: 150px; width: 100px"></img>
+              <img src=spidermanhomecoming.jfif style="height: 150px; width: 100px"></img>
+              <img src=thorragnarok.jfif style="height: 150px; width: 100px"></img>
+              <img src=blackpanther.jfif style="height: 150px; width: 100px"></img>
+              <img src=avengersinfinitywar.jfif style="height: 150px; width: 100px"></img>
+              <img src=antmanandthewasp.jfif style="height: 150px; width: 100px"></img>
+              <img src=captainmarvel.jfif style="height: 150px; width: 100px"></img>
+              <img src=avengersendgame.jfif style="height: 150px; width: 100px"></img>
+              <img src=spidermanfarfromhome.jfif style="height: 150px; width: 100px"></img>
+            </div>
+          </div>
     <nav>
       <a href="./index.html">Main Page</a> |
-      <a href="./page2.html">Page2</a>
+      <a href="./page2.html">Page 2</a>
     </nav>
   </body>
+
 </html>
